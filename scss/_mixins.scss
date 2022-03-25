@@ -1,0 +1,13 @@
+@mixin respond ($breakpoint) {
+    @if $breakpoint==telefonlar-uchun {
+        @media only screen and (max-width:600px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==tablet-uchun {
+        @media only screen and (max-width:900px) {
+            @content;
+        }
+    }
+}

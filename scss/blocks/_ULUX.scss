@@ -1,0 +1,70 @@
+.UlUX {
+    padding-top: 120px;
+    background-image: url("../imges/round.svg");
+    background-repeat: no-repeat;
+    background-position: center right -400px;
+    padding-bottom: 20px;
+
+    @include respond(tablet-uchun) {
+        background-image: none;
+    }
+}
+
+.UlUX_In {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(tablet-uchun) {
+        flex-direction: column-reverse;
+    }
+}
+
+.UlUX_left {
+    width: 100%;
+    max-width: 445px;
+
+    @include respond(tablet-uchun) {
+        text-align: center;
+        max-width: 573px;
+    }
+}
+
+.ULUX-title {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+    margin-bottom: 24px;
+
+    @include respond(telefonlar-uchun) {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: -0.276923px;
+        color: #36536B;
+    }
+}
+
+.ULUX_right {
+    display: flex;
+
+}
+
+.ULUX_right--img {
+    display: none;
+
+    @include respond(tablet-uchun) {
+        display: inline-block;
+    }
+}
+
+.ULUX_right--imgs {
+    @include respond(tablet-uchun) {
+        display: none;
+    }
+}

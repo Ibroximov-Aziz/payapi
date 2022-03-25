@@ -1,0 +1,47 @@
+.footer {
+    background-color: #1B262F;
+    padding: 31px 0;
+    margin-top: 100px;
+
+}
+
+.footer_in {
+    display: flex;
+    align-items: center;
+
+    @include respond(telefonlar-uchun) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+.footer_in nav {
+    margin-right: auto;
+
+    @include respond(telefonlar-uchun) {
+        margin: 43px 0 0 0;
+
+    }
+}
+
+.footer_in nav .list {
+    @include respond(telefonlar-uchun) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.footer_in nav .list li {
+    @include respond(telefonlar-uchun) {
+        margin-bottom: 31px;
+    }
+}
+
+.l3 {
+    color: #FBFCFE;
+}
+
+.svg svg {
+    margin-left: 24px;
+}

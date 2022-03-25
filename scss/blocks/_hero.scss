@@ -1,0 +1,120 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 75px;
+
+    @include respond(tablet-uchun) {
+     flex-direction: column-reverse;
+     margin-bottom: 75px;
+ }
+}
+
+.hero-left {
+    max-width: 546px;
+
+    @include respond(tablet-uchun) {
+        text-align: center;
+    }
+}
+
+.hero__title {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.553846px;
+    color: #36536B;
+    margin-bottom: 30px;
+
+    @include respond(tablet-uchun) {
+        margin-top: 0;
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    @include respond(telefonlar-uchun) {
+        font-size: 32px;
+        line-height: 36px;
+        width: 327px;
+        text-align: center;
+        letter-spacing: -0.246154px;
+    }
+}
+
+.form {
+    width: 100%;
+    max-width: 445px;
+    position: relative;
+
+    @include respond(tablet-uchun) {
+        margin: 0 auto;
+    }
+}
+
+.hero__img {
+    object-fit: cover;
+    width: 257px;
+    height: 498px;
+}
+
+.hero__input {
+    width: 100%;
+    display: inline-block;
+    padding: 16px 0 14px 27px;
+    background: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    border: none;
+    margin-bottom: 18px;
+}
+
+.hero__input::placeholder {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    border: none;
+    outline: none;
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.btn-hero {
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @include respond(telefonlar-uchun) {
+        position: static;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+
+.hero__text--solution {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #6C8294;
+    margin-left: 27px;
+}
+
+.hero__text--solution a {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    margin-left: 2px;
+    color: #6C8294;
+}
+
+.nav-btn {
+
+    @include respond(telefonlar-uchun) {
+        display: none;
+    }
+}

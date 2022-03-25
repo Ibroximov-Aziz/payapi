@@ -1,0 +1,37 @@
+.contact__in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(tablet-uchun) {
+        flex-direction: column;
+    }
+}
+
+.contact_right {
+    max-width: 445px;
+    width: 100%;
+}
+
+.contact--title {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+    @include respond(tablet-uchun) {
+        margin-bottom: 40px;
+    }
+
+    @include respond(telefonlar-uchun) {
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: -0.246154px;
+    }
+}
